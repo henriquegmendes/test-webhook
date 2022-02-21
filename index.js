@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.post('/webhook', (req, res) => {
     console.log("Recebendo WEBHOOK!!!!!!")
-    console.log(req.body);
+    console.log(JSON.stringify(req.body));
     console.log(req.query);
 
     res.status(200).json();
